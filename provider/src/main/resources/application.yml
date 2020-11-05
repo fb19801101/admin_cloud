@@ -1,0 +1,16 @@
+server:
+  port: 8081
+# 应用名称：client
+spring:
+  application:
+    name: provider
+# 注册到我们本地的eureka注册中心，端口是8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+
+#服务消费者端的降级,开启feign对hystrix的支持
+feign:
+  hystrix:
+    enabled: true
