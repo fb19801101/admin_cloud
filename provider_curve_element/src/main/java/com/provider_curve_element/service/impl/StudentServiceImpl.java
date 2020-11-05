@@ -1,8 +1,11 @@
 package com.provider_curve_element.service.impl;
 
 import com.provider_curve_element.entity.Student;
+import com.provider_curve_element.mapper.StudentMapper;
 import com.provider_curve_element.service.StudentService;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @author 信息化管理部-方波
@@ -12,6 +15,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class StudentServiceImpl implements StudentService {
+    @Resource
+    private StudentMapper studentMapper;
+
     @Override
     public Student getStudent () {
         Student student = new Student();
@@ -20,5 +26,10 @@ public class StudentServiceImpl implements StudentService {
         student.setName("李四");
         student.setAge(58);
         return student;
+    }
+
+    @Override
+    public Student getStudentByName (String name) {
+        return studentMapper.selectByName(name);
     }
 }

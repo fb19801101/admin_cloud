@@ -10,4 +10,5 @@ import com.provider_curve_element.entity.Student;
  */
 public interface StudentService {
     Student getStudent();
+    Student getStudentByName(String name);
 }

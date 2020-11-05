@@ -16,6 +16,6 @@ eureka:
 feign:
   client:
     config:
-      provider-curve-element:
+      provider-other:
         requestInterceptors:
           - com.feign.FeignRequestInterceptor

@@ -3,6 +3,7 @@ package com.feign.controller;
 import com.feign.entity.Student;
 import com.feign.service.StudentService;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -18,6 +19,15 @@ import javax.annotation.Resource;
 public class ConsumerController {
     @Resource
     private StudentService studentService;
+
+    /**
+     * 调用服务提供者
+     * @return
+     */
+    @RequestMapping("/showMybatis")
+    public Student showMybatis(@RequestParam("name") String name){
+        return studentService.showStudentByName(name);
+    }
 
     /**
      * 调用服务提供者
