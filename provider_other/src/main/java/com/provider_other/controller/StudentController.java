@@ -36,7 +36,7 @@ public class StudentController {
      * @return JSON对象
      * */
     @GetMapping(value = "/mybatis")
-    public Student getMybatis (@RequestParam("name") String name) {
+    public Student getMybatis (String name) {
         return studentService.getStudentByName(name);
     }
 }

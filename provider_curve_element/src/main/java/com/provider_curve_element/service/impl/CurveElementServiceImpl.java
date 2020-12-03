@@ -6,7 +6,6 @@ import com.provider_curve_element.service.CurveElementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -17,7 +16,7 @@ import java.util.List;
  */
 @Service
 public class CurveElementServiceImpl implements CurveElementService {
-    @Resource
+    @Autowired
     private CurveElementMapper curveElementMapper;
 
     @Override
@@ -31,17 +30,17 @@ public class CurveElementServiceImpl implements CurveElementService {
     }
 
     @Override
-    public CurveElement getCurveElementByJd(String jd) {
-        return curveElementMapper.selectByPrimaryKey(jd);
+    public CurveElement getCurveElementById(Integer id) {
+        return curveElementMapper.selectByPrimaryKey(id);
     }
 
     @Override
-    public CurveElement getCurveElementByMinJd() {
+    public CurveElement getCurveElementByMinId() {
         return curveElementMapper.selectByMinPrimaryKey();
     }
 
     @Override
-    public CurveElement getCurveElementByMaxJd() {
+    public CurveElement getCurveElementByMaxId() {
         return curveElementMapper.selectByMaxPrimaryKey();
     }
 
@@ -121,13 +120,13 @@ public class CurveElementServiceImpl implements CurveElementService {
     }
 
     @Override
-    public int setCurveElementByJd(CurveElement record) {
+    public int setCurveElementById(CurveElement record) {
         return curveElementMapper.updateByPrimaryKey(record);
     }
 
     @Override
-    public int delCurveElementByJd(String jd) {
-        return curveElementMapper.deleteByPrimaryKey(jd);
+    public int delCurveElementById(Integer id) {
+        return curveElementMapper.deleteByPrimaryKey(id);
     }
 
     @Override
@@ -136,7 +135,22 @@ public class CurveElementServiceImpl implements CurveElementService {
     }
 
     @Override
-    public void clearCurveElement() {
-        curveElementMapper.clearCurveElement();
+    public int delAllCurveElement() {
+        return curveElementMapper.deleteAllModel();
+    }
+
+    @Override
+    public Integer getPrimaryKeyByQxAndJd(String ceQx, String ceJd) {
+        return curveElementMapper.selectPrimaryKeyByQxAndJd(ceQx,ceJd);
+    }
+
+    @Override
+    public List<String> getCurveLine() {
+        return curveElementMapper.selectCurveLine();
+    }
+
+    @Override
+    public List<CurveElement> getCurveElementByQx(String ceQx) {
+        return curveElementMapper.selectCurveElementByQx(ceQx);
     }
 }

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jsp_feign:war">
+    <output-path>$PROJECT_DIR$/jsp_feign/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>jsp_feign</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="jsp_feign.war">
+      <element id="artifact" artifact-name="jsp_feign:war exploded" />
+    </root>
+  </artifact>
+</component>

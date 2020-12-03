@@ -18,6 +18,7 @@ package com.provider_curve_element.excelkit.util;
 import com.provider_curve_element.excelkit.config.Options;
 import com.provider_curve_element.excelkit.exception.ExcelKitRuntimeException;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import javax.servlet.http.HttpServletResponse;
@@ -119,10 +120,13 @@ public class POIUtil {
   public static void download(
       SXSSFWorkbook wb, HttpServletResponse response, String filename) {
     try {
-      OutputStream out = response.getOutputStream();
-      response.setContentType(Const.XLSX_CONTENT_TYPE);
-      response.setHeader(Const.XLSX_HEADER_KEY,
-          String.format(Const.XLSX_HEADER_VALUE_TEMPLATE, filename));
+      OutputStream out = new FileOutputStream(filename);
+      if(response != null) {
+        out = response.getOutputStream();
+        response.setContentType(Const.XLSX_CONTENT_TYPE);
+        response.setHeader(Const.XLSX_HEADER_KEY,
+                String.format(Const.XLSX_HEADER_VALUE_TEMPLATE, filename));
+      }
       POIUtil.write(wb, out);
     } catch (IOException e) {
       e.printStackTrace();

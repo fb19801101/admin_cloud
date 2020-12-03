@@ -124,6 +124,66 @@ public class CurveElementExample {
             criteria.add(new Criterion(condition, value1, value2));
         }
 
+        public Criteria andCeIdIsNull() {
+            addCriterion("ce_ID is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdIsNotNull() {
+            addCriterion("ce_ID is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdEqualTo(Integer value) {
+            addCriterion("ce_ID =", value, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdNotEqualTo(Integer value) {
+            addCriterion("ce_ID <>", value, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdGreaterThan(Integer value) {
+            addCriterion("ce_ID >", value, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("ce_ID >=", value, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdLessThan(Integer value) {
+            addCriterion("ce_ID <", value, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdLessThanOrEqualTo(Integer value) {
+            addCriterion("ce_ID <=", value, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdIn(List<Integer> values) {
+            addCriterion("ce_ID in", values, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdNotIn(List<Integer> values) {
+            addCriterion("ce_ID not in", values, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdBetween(Integer value1, Integer value2) {
+            addCriterion("ce_ID between", value1, value2, "ceId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("ce_ID not between", value1, value2, "ceId");
+            return (Criteria) this;
+        }
+
         public Criteria andCeJdIsNull() {
             addCriterion("ce_JD is null");
             return (Criteria) this;
@@ -254,123 +314,123 @@ public class CurveElementExample {
             return (Criteria) this;
         }
 
-        public Criteria andCeNxIsNull() {
-            addCriterion("ce_NX is null");
+        public Criteria andCeExIsNull() {
+            addCriterion("ce_EX is null");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxIsNotNull() {
-            addCriterion("ce_NX is not null");
+        public Criteria andCeExIsNotNull() {
+            addCriterion("ce_EX is not null");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxEqualTo(Double value) {
-            addCriterion("ce_NX =", value, "ceNx");
+        public Criteria andCeExEqualTo(Double value) {
+            addCriterion("ce_EX =", value, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxNotEqualTo(Double value) {
-            addCriterion("ce_NX <>", value, "ceNx");
+        public Criteria andCeExNotEqualTo(Double value) {
+            addCriterion("ce_EX <>", value, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxGreaterThan(Double value) {
-            addCriterion("ce_NX >", value, "ceNx");
+        public Criteria andCeExGreaterThan(Double value) {
+            addCriterion("ce_EX >", value, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxGreaterThanOrEqualTo(Double value) {
-            addCriterion("ce_NX >=", value, "ceNx");
+        public Criteria andCeExGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_EX >=", value, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxLessThan(Double value) {
-            addCriterion("ce_NX <", value, "ceNx");
+        public Criteria andCeExLessThan(Double value) {
+            addCriterion("ce_EX <", value, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxLessThanOrEqualTo(Double value) {
-            addCriterion("ce_NX <=", value, "ceNx");
+        public Criteria andCeExLessThanOrEqualTo(Double value) {
+            addCriterion("ce_EX <=", value, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxIn(List<Double> values) {
-            addCriterion("ce_NX in", values, "ceNx");
+        public Criteria andCeExIn(List<Double> values) {
+            addCriterion("ce_EX in", values, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxNotIn(List<Double> values) {
-            addCriterion("ce_NX not in", values, "ceNx");
+        public Criteria andCeExNotIn(List<Double> values) {
+            addCriterion("ce_EX not in", values, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxBetween(Double value1, Double value2) {
-            addCriterion("ce_NX between", value1, value2, "ceNx");
+        public Criteria andCeExBetween(Double value1, Double value2) {
+            addCriterion("ce_EX between", value1, value2, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeNxNotBetween(Double value1, Double value2) {
-            addCriterion("ce_NX not between", value1, value2, "ceNx");
+        public Criteria andCeExNotBetween(Double value1, Double value2) {
+            addCriterion("ce_EX not between", value1, value2, "ceEx");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyIsNull() {
-            addCriterion("ce_EY is null");
+        public Criteria andCeNyIsNull() {
+            addCriterion("ce_NY is null");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyIsNotNull() {
-            addCriterion("ce_EY is not null");
+        public Criteria andCeNyIsNotNull() {
+            addCriterion("ce_NY is not null");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyEqualTo(Double value) {
-            addCriterion("ce_EY =", value, "ceEy");
+        public Criteria andCeNyEqualTo(Double value) {
+            addCriterion("ce_NY =", value, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyNotEqualTo(Double value) {
-            addCriterion("ce_EY <>", value, "ceEy");
+        public Criteria andCeNyNotEqualTo(Double value) {
+            addCriterion("ce_NY <>", value, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyGreaterThan(Double value) {
-            addCriterion("ce_EY >", value, "ceEy");
+        public Criteria andCeNyGreaterThan(Double value) {
+            addCriterion("ce_NY >", value, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyGreaterThanOrEqualTo(Double value) {
-            addCriterion("ce_EY >=", value, "ceEy");
+        public Criteria andCeNyGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_NY >=", value, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyLessThan(Double value) {
-            addCriterion("ce_EY <", value, "ceEy");
+        public Criteria andCeNyLessThan(Double value) {
+            addCriterion("ce_NY <", value, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyLessThanOrEqualTo(Double value) {
-            addCriterion("ce_EY <=", value, "ceEy");
+        public Criteria andCeNyLessThanOrEqualTo(Double value) {
+            addCriterion("ce_NY <=", value, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyIn(List<Double> values) {
-            addCriterion("ce_EY in", values, "ceEy");
+        public Criteria andCeNyIn(List<Double> values) {
+            addCriterion("ce_NY in", values, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyNotIn(List<Double> values) {
-            addCriterion("ce_EY not in", values, "ceEy");
+        public Criteria andCeNyNotIn(List<Double> values) {
+            addCriterion("ce_NY not in", values, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyBetween(Double value1, Double value2) {
-            addCriterion("ce_EY between", value1, value2, "ceEy");
+        public Criteria andCeNyBetween(Double value1, Double value2) {
+            addCriterion("ce_NY between", value1, value2, "ceNy");
             return (Criteria) this;
         }
 
-        public Criteria andCeEyNotBetween(Double value1, Double value2) {
-            addCriterion("ce_EY not between", value1, value2, "ceEy");
+        public Criteria andCeNyNotBetween(Double value1, Double value2) {
+            addCriterion("ce_NY not between", value1, value2, "ceNy");
             return (Criteria) this;
         }
 
@@ -1034,63 +1094,63 @@ public class CurveElementExample {
             return (Criteria) this;
         }
 
-        public Criteria andCeLhIsNull() {
-            addCriterion("ce_Lh is null");
+        public Criteria andCeLIsNull() {
+            addCriterion("ce_L is null");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhIsNotNull() {
-            addCriterion("ce_Lh is not null");
+        public Criteria andCeLIsNotNull() {
+            addCriterion("ce_L is not null");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhEqualTo(Double value) {
-            addCriterion("ce_Lh =", value, "ceLh");
+        public Criteria andCeLEqualTo(Double value) {
+            addCriterion("ce_L =", value, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhNotEqualTo(Double value) {
-            addCriterion("ce_Lh <>", value, "ceLh");
+        public Criteria andCeLNotEqualTo(Double value) {
+            addCriterion("ce_L <>", value, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhGreaterThan(Double value) {
-            addCriterion("ce_Lh >", value, "ceLh");
+        public Criteria andCeLGreaterThan(Double value) {
+            addCriterion("ce_L >", value, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhGreaterThanOrEqualTo(Double value) {
-            addCriterion("ce_Lh >=", value, "ceLh");
+        public Criteria andCeLGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_L >=", value, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhLessThan(Double value) {
-            addCriterion("ce_Lh <", value, "ceLh");
+        public Criteria andCeLLessThan(Double value) {
+            addCriterion("ce_L <", value, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhLessThanOrEqualTo(Double value) {
-            addCriterion("ce_Lh <=", value, "ceLh");
+        public Criteria andCeLLessThanOrEqualTo(Double value) {
+            addCriterion("ce_L <=", value, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhIn(List<Double> values) {
-            addCriterion("ce_Lh in", values, "ceLh");
+        public Criteria andCeLIn(List<Double> values) {
+            addCriterion("ce_L in", values, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhNotIn(List<Double> values) {
-            addCriterion("ce_Lh not in", values, "ceLh");
+        public Criteria andCeLNotIn(List<Double> values) {
+            addCriterion("ce_L not in", values, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhBetween(Double value1, Double value2) {
-            addCriterion("ce_Lh between", value1, value2, "ceLh");
+        public Criteria andCeLBetween(Double value1, Double value2) {
+            addCriterion("ce_L between", value1, value2, "ceL");
             return (Criteria) this;
         }
 
-        public Criteria andCeLhNotBetween(Double value1, Double value2) {
-            addCriterion("ce_Lh not between", value1, value2, "ceLh");
+        public Criteria andCeLNotBetween(Double value1, Double value2) {
+            addCriterion("ce_L not between", value1, value2, "ceL");
             return (Criteria) this;
         }
 
@@ -1691,6 +1751,916 @@ public class CurveElementExample {
 
         public Criteria andCeZdNotBetween(Double value1, Double value2) {
             addCriterion("ce_ZD not between", value1, value2, "ceZd");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXIsNull() {
+            addCriterion("ce_QD_x is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXIsNotNull() {
+            addCriterion("ce_QD_x is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXEqualTo(Double value) {
+            addCriterion("ce_QD_x =", value, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXNotEqualTo(Double value) {
+            addCriterion("ce_QD_x <>", value, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXGreaterThan(Double value) {
+            addCriterion("ce_QD_x >", value, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_QD_x >=", value, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXLessThan(Double value) {
+            addCriterion("ce_QD_x <", value, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXLessThanOrEqualTo(Double value) {
+            addCriterion("ce_QD_x <=", value, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXIn(List<Double> values) {
+            addCriterion("ce_QD_x in", values, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXNotIn(List<Double> values) {
+            addCriterion("ce_QD_x not in", values, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXBetween(Double value1, Double value2) {
+            addCriterion("ce_QD_x between", value1, value2, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdXNotBetween(Double value1, Double value2) {
+            addCriterion("ce_QD_x not between", value1, value2, "ceQdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYIsNull() {
+            addCriterion("ce_QD_y is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYIsNotNull() {
+            addCriterion("ce_QD_y is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYEqualTo(Double value) {
+            addCriterion("ce_QD_y =", value, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYNotEqualTo(Double value) {
+            addCriterion("ce_QD_y <>", value, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYGreaterThan(Double value) {
+            addCriterion("ce_QD_y >", value, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_QD_y >=", value, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYLessThan(Double value) {
+            addCriterion("ce_QD_y <", value, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYLessThanOrEqualTo(Double value) {
+            addCriterion("ce_QD_y <=", value, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYIn(List<Double> values) {
+            addCriterion("ce_QD_y in", values, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYNotIn(List<Double> values) {
+            addCriterion("ce_QD_y not in", values, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYBetween(Double value1, Double value2) {
+            addCriterion("ce_QD_y between", value1, value2, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQdYNotBetween(Double value1, Double value2) {
+            addCriterion("ce_QD_y not between", value1, value2, "ceQdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXIsNull() {
+            addCriterion("ce_ZH_x is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXIsNotNull() {
+            addCriterion("ce_ZH_x is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXEqualTo(Double value) {
+            addCriterion("ce_ZH_x =", value, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXNotEqualTo(Double value) {
+            addCriterion("ce_ZH_x <>", value, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXGreaterThan(Double value) {
+            addCriterion("ce_ZH_x >", value, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_ZH_x >=", value, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXLessThan(Double value) {
+            addCriterion("ce_ZH_x <", value, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXLessThanOrEqualTo(Double value) {
+            addCriterion("ce_ZH_x <=", value, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXIn(List<Double> values) {
+            addCriterion("ce_ZH_x in", values, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXNotIn(List<Double> values) {
+            addCriterion("ce_ZH_x not in", values, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXBetween(Double value1, Double value2) {
+            addCriterion("ce_ZH_x between", value1, value2, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhXNotBetween(Double value1, Double value2) {
+            addCriterion("ce_ZH_x not between", value1, value2, "ceZhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYIsNull() {
+            addCriterion("ce_ZH_y is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYIsNotNull() {
+            addCriterion("ce_ZH_y is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYEqualTo(Double value) {
+            addCriterion("ce_ZH_y =", value, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYNotEqualTo(Double value) {
+            addCriterion("ce_ZH_y <>", value, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYGreaterThan(Double value) {
+            addCriterion("ce_ZH_y >", value, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_ZH_y >=", value, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYLessThan(Double value) {
+            addCriterion("ce_ZH_y <", value, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYLessThanOrEqualTo(Double value) {
+            addCriterion("ce_ZH_y <=", value, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYIn(List<Double> values) {
+            addCriterion("ce_ZH_y in", values, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYNotIn(List<Double> values) {
+            addCriterion("ce_ZH_y not in", values, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYBetween(Double value1, Double value2) {
+            addCriterion("ce_ZH_y between", value1, value2, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZhYNotBetween(Double value1, Double value2) {
+            addCriterion("ce_ZH_y not between", value1, value2, "ceZhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXIsNull() {
+            addCriterion("ce_HY_x is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXIsNotNull() {
+            addCriterion("ce_HY_x is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXEqualTo(Double value) {
+            addCriterion("ce_HY_x =", value, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXNotEqualTo(Double value) {
+            addCriterion("ce_HY_x <>", value, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXGreaterThan(Double value) {
+            addCriterion("ce_HY_x >", value, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_HY_x >=", value, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXLessThan(Double value) {
+            addCriterion("ce_HY_x <", value, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXLessThanOrEqualTo(Double value) {
+            addCriterion("ce_HY_x <=", value, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXIn(List<Double> values) {
+            addCriterion("ce_HY_x in", values, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXNotIn(List<Double> values) {
+            addCriterion("ce_HY_x not in", values, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXBetween(Double value1, Double value2) {
+            addCriterion("ce_HY_x between", value1, value2, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyXNotBetween(Double value1, Double value2) {
+            addCriterion("ce_HY_x not between", value1, value2, "ceHyX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYIsNull() {
+            addCriterion("ce_HY_y is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYIsNotNull() {
+            addCriterion("ce_HY_y is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYEqualTo(Double value) {
+            addCriterion("ce_HY_y =", value, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYNotEqualTo(Double value) {
+            addCriterion("ce_HY_y <>", value, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYGreaterThan(Double value) {
+            addCriterion("ce_HY_y >", value, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_HY_y >=", value, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYLessThan(Double value) {
+            addCriterion("ce_HY_y <", value, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYLessThanOrEqualTo(Double value) {
+            addCriterion("ce_HY_y <=", value, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYIn(List<Double> values) {
+            addCriterion("ce_HY_y in", values, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYNotIn(List<Double> values) {
+            addCriterion("ce_HY_y not in", values, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYBetween(Double value1, Double value2) {
+            addCriterion("ce_HY_y between", value1, value2, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHyYNotBetween(Double value1, Double value2) {
+            addCriterion("ce_HY_y not between", value1, value2, "ceHyY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXIsNull() {
+            addCriterion("ce_QZ_x is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXIsNotNull() {
+            addCriterion("ce_QZ_x is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXEqualTo(Double value) {
+            addCriterion("ce_QZ_x =", value, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXNotEqualTo(Double value) {
+            addCriterion("ce_QZ_x <>", value, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXGreaterThan(Double value) {
+            addCriterion("ce_QZ_x >", value, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_QZ_x >=", value, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXLessThan(Double value) {
+            addCriterion("ce_QZ_x <", value, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXLessThanOrEqualTo(Double value) {
+            addCriterion("ce_QZ_x <=", value, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXIn(List<Double> values) {
+            addCriterion("ce_QZ_x in", values, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXNotIn(List<Double> values) {
+            addCriterion("ce_QZ_x not in", values, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXBetween(Double value1, Double value2) {
+            addCriterion("ce_QZ_x between", value1, value2, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzXNotBetween(Double value1, Double value2) {
+            addCriterion("ce_QZ_x not between", value1, value2, "ceQzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYIsNull() {
+            addCriterion("ce_QZ_y is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYIsNotNull() {
+            addCriterion("ce_QZ_y is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYEqualTo(Double value) {
+            addCriterion("ce_QZ_y =", value, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYNotEqualTo(Double value) {
+            addCriterion("ce_QZ_y <>", value, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYGreaterThan(Double value) {
+            addCriterion("ce_QZ_y >", value, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_QZ_y >=", value, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYLessThan(Double value) {
+            addCriterion("ce_QZ_y <", value, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYLessThanOrEqualTo(Double value) {
+            addCriterion("ce_QZ_y <=", value, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYIn(List<Double> values) {
+            addCriterion("ce_QZ_y in", values, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYNotIn(List<Double> values) {
+            addCriterion("ce_QZ_y not in", values, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYBetween(Double value1, Double value2) {
+            addCriterion("ce_QZ_y between", value1, value2, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQzYNotBetween(Double value1, Double value2) {
+            addCriterion("ce_QZ_y not between", value1, value2, "ceQzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXIsNull() {
+            addCriterion("ce_YH_x is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXIsNotNull() {
+            addCriterion("ce_YH_x is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXEqualTo(Double value) {
+            addCriterion("ce_YH_x =", value, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXNotEqualTo(Double value) {
+            addCriterion("ce_YH_x <>", value, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXGreaterThan(Double value) {
+            addCriterion("ce_YH_x >", value, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_YH_x >=", value, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXLessThan(Double value) {
+            addCriterion("ce_YH_x <", value, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXLessThanOrEqualTo(Double value) {
+            addCriterion("ce_YH_x <=", value, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXIn(List<Double> values) {
+            addCriterion("ce_YH_x in", values, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXNotIn(List<Double> values) {
+            addCriterion("ce_YH_x not in", values, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXBetween(Double value1, Double value2) {
+            addCriterion("ce_YH_x between", value1, value2, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhXNotBetween(Double value1, Double value2) {
+            addCriterion("ce_YH_x not between", value1, value2, "ceYhX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYIsNull() {
+            addCriterion("ce_YH_y is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYIsNotNull() {
+            addCriterion("ce_YH_y is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYEqualTo(Double value) {
+            addCriterion("ce_YH_y =", value, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYNotEqualTo(Double value) {
+            addCriterion("ce_YH_y <>", value, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYGreaterThan(Double value) {
+            addCriterion("ce_YH_y >", value, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_YH_y >=", value, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYLessThan(Double value) {
+            addCriterion("ce_YH_y <", value, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYLessThanOrEqualTo(Double value) {
+            addCriterion("ce_YH_y <=", value, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYIn(List<Double> values) {
+            addCriterion("ce_YH_y in", values, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYNotIn(List<Double> values) {
+            addCriterion("ce_YH_y not in", values, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYBetween(Double value1, Double value2) {
+            addCriterion("ce_YH_y between", value1, value2, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeYhYNotBetween(Double value1, Double value2) {
+            addCriterion("ce_YH_y not between", value1, value2, "ceYhY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXIsNull() {
+            addCriterion("ce_HZ_x is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXIsNotNull() {
+            addCriterion("ce_HZ_x is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXEqualTo(Double value) {
+            addCriterion("ce_HZ_x =", value, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXNotEqualTo(Double value) {
+            addCriterion("ce_HZ_x <>", value, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXGreaterThan(Double value) {
+            addCriterion("ce_HZ_x >", value, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_HZ_x >=", value, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXLessThan(Double value) {
+            addCriterion("ce_HZ_x <", value, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXLessThanOrEqualTo(Double value) {
+            addCriterion("ce_HZ_x <=", value, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXIn(List<Double> values) {
+            addCriterion("ce_HZ_x in", values, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXNotIn(List<Double> values) {
+            addCriterion("ce_HZ_x not in", values, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXBetween(Double value1, Double value2) {
+            addCriterion("ce_HZ_x between", value1, value2, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzXNotBetween(Double value1, Double value2) {
+            addCriterion("ce_HZ_x not between", value1, value2, "ceHzX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYIsNull() {
+            addCriterion("ce_HZ_y is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYIsNotNull() {
+            addCriterion("ce_HZ_y is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYEqualTo(Double value) {
+            addCriterion("ce_HZ_y =", value, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYNotEqualTo(Double value) {
+            addCriterion("ce_HZ_y <>", value, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYGreaterThan(Double value) {
+            addCriterion("ce_HZ_y >", value, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_HZ_y >=", value, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYLessThan(Double value) {
+            addCriterion("ce_HZ_y <", value, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYLessThanOrEqualTo(Double value) {
+            addCriterion("ce_HZ_y <=", value, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYIn(List<Double> values) {
+            addCriterion("ce_HZ_y in", values, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYNotIn(List<Double> values) {
+            addCriterion("ce_HZ_y not in", values, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYBetween(Double value1, Double value2) {
+            addCriterion("ce_HZ_y between", value1, value2, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeHzYNotBetween(Double value1, Double value2) {
+            addCriterion("ce_HZ_y not between", value1, value2, "ceHzY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXIsNull() {
+            addCriterion("ce_ZD_x is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXIsNotNull() {
+            addCriterion("ce_ZD_x is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXEqualTo(Double value) {
+            addCriterion("ce_ZD_x =", value, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXNotEqualTo(Double value) {
+            addCriterion("ce_ZD_x <>", value, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXGreaterThan(Double value) {
+            addCriterion("ce_ZD_x >", value, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_ZD_x >=", value, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXLessThan(Double value) {
+            addCriterion("ce_ZD_x <", value, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXLessThanOrEqualTo(Double value) {
+            addCriterion("ce_ZD_x <=", value, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXIn(List<Double> values) {
+            addCriterion("ce_ZD_x in", values, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXNotIn(List<Double> values) {
+            addCriterion("ce_ZD_x not in", values, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXBetween(Double value1, Double value2) {
+            addCriterion("ce_ZD_x between", value1, value2, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdXNotBetween(Double value1, Double value2) {
+            addCriterion("ce_ZD_x not between", value1, value2, "ceZdX");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYIsNull() {
+            addCriterion("ce_ZD_y is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYIsNotNull() {
+            addCriterion("ce_ZD_y is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYEqualTo(Double value) {
+            addCriterion("ce_ZD_y =", value, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYNotEqualTo(Double value) {
+            addCriterion("ce_ZD_y <>", value, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYGreaterThan(Double value) {
+            addCriterion("ce_ZD_y >", value, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYGreaterThanOrEqualTo(Double value) {
+            addCriterion("ce_ZD_y >=", value, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYLessThan(Double value) {
+            addCriterion("ce_ZD_y <", value, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYLessThanOrEqualTo(Double value) {
+            addCriterion("ce_ZD_y <=", value, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYIn(List<Double> values) {
+            addCriterion("ce_ZD_y in", values, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYNotIn(List<Double> values) {
+            addCriterion("ce_ZD_y not in", values, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYBetween(Double value1, Double value2) {
+            addCriterion("ce_ZD_y between", value1, value2, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeZdYNotBetween(Double value1, Double value2) {
+            addCriterion("ce_ZD_y not between", value1, value2, "ceZdY");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxIsNull() {
+            addCriterion("ce_QX is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxIsNotNull() {
+            addCriterion("ce_QX is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxEqualTo(String value) {
+            addCriterion("ce_QX =", value, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxNotEqualTo(String value) {
+            addCriterion("ce_QX <>", value, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxGreaterThan(String value) {
+            addCriterion("ce_QX >", value, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxGreaterThanOrEqualTo(String value) {
+            addCriterion("ce_QX >=", value, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxLessThan(String value) {
+            addCriterion("ce_QX <", value, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxLessThanOrEqualTo(String value) {
+            addCriterion("ce_QX <=", value, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxLike(String value) {
+            addCriterion("ce_QX like", value, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxNotLike(String value) {
+            addCriterion("ce_QX not like", value, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxIn(List<String> values) {
+            addCriterion("ce_QX in", values, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxNotIn(List<String> values) {
+            addCriterion("ce_QX not in", values, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxBetween(String value1, String value2) {
+            addCriterion("ce_QX between", value1, value2, "ceQx");
+            return (Criteria) this;
+        }
+
+        public Criteria andCeQxNotBetween(String value1, String value2) {
+            addCriterion("ce_QX not between", value1, value2, "ceQx");
             return (Criteria) this;
         }
     }

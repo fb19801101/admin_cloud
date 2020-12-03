@@ -1,0 +1,39 @@
+server:
+  port: 8088
+# 应用名称：client
+spring:
+  application:
+    name: provider-login
+
+  #据库连接配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_project?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: Dx19800602Fb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#关联**Mapper.xml 文件
+mybatis:
+  mapper-locations: classpath:com/provider_login/mapper/*.xml
+  config-location: classpath:mybatis.cfg.xml
+
+#日志配置 无特殊需求无需更改
+logging:
+  config:  classpath:log4j2.xml
+  level:
+    root: INFO
+    javax.activation: INFO
+    org.apache.ibatis: INFO
+    org.apache.catalina: INFO
+    org.apache.commons.beanutils.converters: INFO
+    org.apache.coyote.http11.Http11Processor: INFO
+    org.apache.http: INFO
+    org.apache.tomcat: INFO
+    org.springframework: INFO
+    com.chinamobile.cmss.bdpaas.resource.monitor: DEBUG
+
+# 注册到我们本地的eureka注册中心，端口是8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/

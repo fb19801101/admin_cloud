@@ -25,7 +25,7 @@ public class StudentController {
      *  获取一个学生
      * @return JSON对象
      * */
-    @GetMapping(value = "/detail")
+    @GetMapping("/detail")
     public Student getStudent () {
         return studentService.getStudent();
     }
@@ -34,7 +34,7 @@ public class StudentController {
      *  获取一个学生
      * @return JSON对象
      * */
-    @GetMapping(value = "/mybatis")
+    @GetMapping("/mybatis")
     public Student getMybatis (@RequestParam("name") String name) {
         return studentService.getStudentByName(name);
     }

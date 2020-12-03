@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/consumer_curve_element" />
+    <file type="web" url="file://$PROJECT_DIR$/jsp_feign" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -11,6 +15,11 @@
         <option value="$PROJECT_DIR$/ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/feign/pom.xml" />
         <option value="$PROJECT_DIR$/provider_curve_element/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer_curve_element/pom.xml" />
+        <option value="$PROJECT_DIR$/jsp_feign/pom.xml" />
+        <option value="$PROJECT_DIR$/provider_login/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer_login/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
       </list>
     </option>
   </component>

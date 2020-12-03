@@ -7,22 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
         <module name="gateway" />
+        <module name="provider_login" />
         <module name="provider" />
         <module name="provider_other" />
+        <module name="consumer_curve_element" />
         <module name="feign" />
         <module name="admin_cloud" />
         <module name="ribbon" />
         <module name="register" />
         <module name="provider_curve_element" />
+        <module name="consumer_login" />
+        <module name="jsp_feign" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin_cloud" target="1.8" />
+      <module name="consumer_curve_element" target="1.8" />
+      <module name="consumer_login" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="feign" target="1.8" />
       <module name="gateway" target="1.8" />
+      <module name="jsp_feign" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="provider_curve_element" target="1.8" />
+      <module name="provider_login" target="1.8" />
       <module name="provider_other" target="1.8" />
       <module name="register" target="1.8" />
       <module name="ribbon" target="1.8" />
@@ -31,10 +41,15 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin_cloud" options="-parameters" />
+      <module name="consumer_curve_element" options="-parameters" />
+      <module name="consumer_login" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="jsp_feign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="provider_curve_element" options="-parameters" />
+      <module name="provider_login" options="-parameters" />
       <module name="provider_other" options="-parameters" />
       <module name="register" options="-parameters" />
       <module name="ribbon" options="-parameters" />

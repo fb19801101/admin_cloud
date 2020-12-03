@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="consumer_curve_element:war">
+    <output-path>$PROJECT_DIR$/consumer_curve_element/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>consumer_curve_element</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="consumer_curve_element.war">
+      <element id="artifact" artifact-name="consumer_curve_element:war exploded" />
+    </root>
+  </artifact>
+</component>

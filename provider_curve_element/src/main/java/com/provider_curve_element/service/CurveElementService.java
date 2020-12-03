@@ -15,11 +15,11 @@ public interface CurveElementService {
 
     List<CurveElement> getAllCurveElement(Integer page, Integer limit);
 
-    CurveElement getCurveElementByJd(String jd);
+    CurveElement getCurveElementById(Integer id);
 
-    CurveElement getCurveElementByMinJd();
+    CurveElement getCurveElementByMinId();
 
-    CurveElement getCurveElementByMaxJd();
+    CurveElement getCurveElementByMaxId();
 
     List<CurveElement> getCurveElementByParam(CurveElement record);
 
@@ -51,11 +51,17 @@ public interface CurveElementService {
 
     int insertCurveElement(CurveElement record);
 
-    int setCurveElementByJd(CurveElement record);
+    int setCurveElementById(CurveElement record);
 
-    int delCurveElementByJd(String jd);
+    int delCurveElementById(Integer id);
 
     long countAllCurveElement();
 
-    void clearCurveElement();
+    int delAllCurveElement();
+
+    Integer getPrimaryKeyByQxAndJd(String ceQx, String ceJd);
+
+    List<String> getCurveLine();
+
+    List<CurveElement> getCurveElementByQx(String ceQx);
 }

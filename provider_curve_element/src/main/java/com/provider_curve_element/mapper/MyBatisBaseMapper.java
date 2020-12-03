@@ -40,6 +40,8 @@ public interface MyBatisBaseMapper<Model, PK extends Serializable, E> {
 
     int updateByPrimaryKey(Model record);
 
+    int deleteAllModel();
+
     List<Model> selectAllModel();
 
     List<Model> selectAllModel(@Param("offset") Integer offset, @Param("limit") Integer limit);

@@ -1,0 +1,26 @@
+server:
+  port: 8099
+  tomcat:
+    uri-encoding: UTF-8
+
+#指定当前服务的名称会注册到注册中心
+spring:
+  application:
+    name: jsp-feign
+  #jsp前后缀
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+    #配置静态资源访问路径
+    static-path-pattern: /res/**
+
+  # Tomcat部署配置上下文 Context节点属性增加 name属性 标明唯一性
+  jmx:
+    enabled: false
+
+#指定服务注册中心的地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
