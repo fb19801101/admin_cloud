@@ -13,6 +13,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.lang.reflect.Parameter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -69,9 +70,15 @@ public class ResponseParamHandlerMethodArgumentResolver implements HandlerMethod
                         sb.append(buf, 0, rd);
                     }
 
-                    Class<?> parameterType = methodParameter.getParameterType();
-                    object = JSONObject.parseObject(sb.toString(), parameterType);
-                    nativeWebRequest.setAttribute(parameterType.getName(), sb.toString(), NativeWebRequest.SCOPE_REQUEST);
+                    Parameter parameter = methodParameter.getParameter();
+                    JSONObject json = JSON.parseObject(sb.toString());
+                    if(json.size() == 1) {
+                        JSONObject obj = json.getJSONObject(parameter.getName());
+                        object = obj.toJavaObject(parameter.getType());
+                    } else {
+                        object = json;
+                    }
+                    nativeWebRequest.setAttribute(parameter.getType().getName(), sb.toString(), NativeWebRequest.SCOPE_REQUEST);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

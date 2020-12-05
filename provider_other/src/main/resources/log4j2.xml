@@ -2,7 +2,7 @@
 <Configuration>
   <!--<Configuration status="WARN" monitorInterval="30"> -->
   <properties>
-    <property name="LOG_HOME">./logs/Other</property>
+    <property name="LOG_HOME">../logs/Other</property>
   </properties>
   <Appenders>
     <!--*********************控制台日志***********************-->

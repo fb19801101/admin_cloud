@@ -32,7 +32,7 @@ public class CurveElementController {
     private CurveElementService curveElementService;
 
     @PostMapping("/insertCurveElement")
-    public int insertCurveElement(CurveElement curveElement) {
+    public int insertCurveElement(@RequestBody CurveElement curveElement) {
         Integer id = curveElementService.getPrimaryKeyByQxAndJd(curveElement.getCeQx(), curveElement.getCeJd());
         if(id == null) {
             Integer ceId = 0;
@@ -51,7 +51,7 @@ public class CurveElementController {
     }
 
     @PostMapping("/modifyCurveElement")
-    public int modifyCurveElement(CurveElement curveElement) {
+    public int modifyCurveElement(@RequestBody CurveElement curveElement) {
         Integer id = curveElementService.getPrimaryKeyByQxAndJd(curveElement.getCeQx(), curveElement.getCeJd());
         if(id != null) {
             curveElement.setCeId(id);

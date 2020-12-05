@@ -1,5 +1,6 @@
 package com.consumer_curve_element.service;
 
+import com.consumer_curve_element.ResponseParam;
 import com.consumer_curve_element.entity.CurveElement;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
@@ -22,10 +23,10 @@ public interface CurveElementService {
     int insertCurveElement(@RequestBody CurveElement curveElement);
 
     @PostMapping("/curve-element/modifyCurveElement")
-    int modifyCurveElement(@RequestBody CurveElement curveElement);
+    int modifyCurveElement(@RequestBody  CurveElement curveElement);
 
     @GetMapping("/curve-element/deleteCurveElement")
-    int deleteCurveElement(@RequestParam("ceQx") String ceQx, @RequestParam("ceJD") String ceJD);
+    int deleteCurveElement(@RequestParam("ceQx") String ceQx, @RequestParam("ceJd") String ceJd);
 
     @GetMapping("/curve-element/clearCurveElement")
     int clearCurveElement();

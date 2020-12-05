@@ -1,16 +1,13 @@
-package com.consumer_curve_element;
+package com.consumer_login;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
-import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
-import java.util.List;
 
 
 /**
@@ -55,7 +52,12 @@ public class ConsumerCrossOriginConfiguration implements WebMvcConfigurer {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**");
+                registry.addMapping("/**")  //项目中的所有接口都支持跨域
+                        .allowedOrigins("*")  //所有地址都可以访问，也可以配置具体地址
+                        .allowCredentials(true) //是否允许请求带有验证信息
+                        .allowedMethods("*")  //"GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS"
+                        .allowedHeaders("*")  //允许的请求头
+                        .maxAge(3600);  // 跨域允许时间
             }
         };
     }

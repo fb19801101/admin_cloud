@@ -26,7 +26,7 @@ public class CurveElementController {
     private CurveElementService curveElementService;
 
     @PostMapping("/insertCurveElement")
-    public ResultData insertCurveElement(@RequestBody CurveElement curveElement) {
+    public ResultData insertCurveElement(@ResponseParam CurveElement curveElement) {
         if(curveElementService.insertCurveElement(curveElement) > 0) {
             String ceQx = curveElement.getCeQx();
             String ceJd = curveElement.getCeJd();
@@ -38,7 +38,7 @@ public class CurveElementController {
     }
 
     @PostMapping("/modifyCurveElement")
-    public ResultData modifyCurveElement(@RequestBody CurveElement curveElement) {
+    public ResultData modifyCurveElement(@ResponseParam CurveElement curveElement) {
         if(curveElementService.modifyCurveElement(curveElement) > 0) {
             String ceQx = curveElement.getCeQx();
             String ceJd = curveElement.getCeJd();
